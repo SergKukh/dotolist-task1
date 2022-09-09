@@ -36,5 +36,5 @@ export const findNotes = (params) => {
 
 export const deleteNote = (id) => {
     data.notes = data.notes.filter(note => note.id !== id);
-    return data.notes;
+    return [...data.notes];
 }
