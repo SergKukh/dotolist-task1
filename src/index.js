@@ -38,7 +38,9 @@ archivedBtn.addEventListener('click', () => {
 modals.forEach(modal => {
     modal.addEventListener('click', () => {
         modal.classList.remove('show');
-    })
+        enterTitle.value = '';
+        categorySelector.value = categories.task.name;
+    });
 })
 
 modalClose.addEventListener('click', () => {
