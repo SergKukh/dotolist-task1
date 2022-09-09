@@ -7,6 +7,70 @@
     <title>Task 1</title>
 </head>
 <body>
-    
+    <div id="app">
+        <div class="listWrapper notes">
+            <div class="list">
+                <div class="row header">
+                    <div class="column col1">Note</div>
+                    <div class="column col2">Created</div>
+                    <div class="column col3">Category</div>
+                    <div class="column col4">Dates</div>
+                    <div class="column col5"></div>
+                </div>
+                <div class="listItems" id="noteListItems"></div>           
+            </div>
+            <div class="listButtons">
+                <button class="btn" id="archivedBtn">Archived</button>
+                <button class="btn" id="createNoteBtn">Create Note</button>
+            </div>
+        </div>
+
+        <div class="listWrapper summary">
+            <div class="list">
+                <div class="row header">
+                    <div class="column colSum1">Category</div>
+                    <div class="column colSum2">Active</div>
+                    <div class="column colSum3">Archived</div>
+                </div>
+                <div class="listItems" id="categoryListItems"></div>
+            </div>
+        </div>
+       
+        <div class="modal" id="noteModal">
+            <div class="modalWrapper" id="createNoteWrapper">
+                <form id="noteForm">
+                    <div class="formItem">
+                        <label for="enterTitle">Title: </label> <br/>
+                        <input type="text" id="enterTitle" class="input">
+                    </div>
+                    <div class="formItem">
+                        <label for="enterTitle">Category: </label> <br/>
+                        <select class="input"></select>
+                    </div>
+                    <div class="formItem">
+                        <input type="submit" class="btn" value="Create" id="modalSubmit">
+                    </div>         
+                </form>
+            </div>
+        </div>
+
+        <div class="modal" id="archivedModal">
+            <div class="modalWrapper listWrapper" id="archivedWrapper">
+                <div class="list">
+                    <div class="row header">
+                        <div class="column col1">Note</div>
+                        <div class="column col2">Created</div>
+                        <div class="column col3">Category</div>
+                        <div class="column col4">Dates</div>
+                        <div class="column col5"></div>
+                    </div>
+                    <div class="listItems" id="archivedListItems"></div>           
+                </div>
+                <div class="listButtons">
+                    <button class="btn modalClose">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>       
 </body>
 </html>

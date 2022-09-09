@@ -1,0 +1,49 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000088;
+    display: none;
+}
+
+.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal>form {
+    padding: 30px 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.input {
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.formItem {
+    margin-top: 10px;
+}
+
+.formItem:first-child {
+    margin-top: 0;
+}
+
+.modalWrapper {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#createNoteWrapper {
+    padding: 30px 40px;
+}
+
+#archivedWrapper {
+    width: 90%;
+}
