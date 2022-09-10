@@ -1,2 +1,1 @@
-Homework Task 1
-ToDo list
+Homework Task 1: Note list
